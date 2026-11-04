@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Foundation Neki — a public organisation supporting children with disabilities and their families in Tajikistan.">
+<title>Foundation Neki | Supporting children, strengthening families</title>
+<style>
+:root{--navy:#16324f;--green:#28734b;--mint:#eaf3ed;--gold:#d9a441;--ink:#24313d;--muted:#63717d;--paper:#fbfcfa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;background:#ffffffed;backdrop-filter:blur(10px);z-index:10;border-bottom:1px solid #e7ece8}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;color:var(--navy);letter-spacing:.02em}
+.mark{width:52px;height:52px;display:block;object-fit:contain;border-radius:0;background:transparent}
+.brand-copy{display:flex;flex-direction:column;gap:2px;line-height:1.1}
+.brand-name{font-weight:800;letter-spacing:.02em}
+.brand-since{font-size:10px;font-weight:700;letter-spacing:.16em;color:var(--green)}
+nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap}nav a{text-decoration:none;font-size:14px;font-weight:700;color:#344653}
+.lang{border:1px solid #d6dfd9;background:white;border-radius:999px;padding:8px 10px;color:var(--navy);font-weight:700}
+.hero{padding:76px 0 62px;background:linear-gradient(115deg,#edf5ef 0%,#f9fbf9 60%,#f5f0e6 100%)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
+.eyebrow{color:var(--green);font-size:13px;text-transform:uppercase;letter-spacing:.15em;font-weight:800}
+h1{font-size:clamp(38px,5.2vw,64px);line-height:1.05;letter-spacing:-.04em;color:var(--navy);margin:14px 0 20px}
+.lead{font-size:19px;color:#52616d;max-width:600px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:13px 19px;border-radius:8px;text-decoration:none;font-weight:800}
+.primary{background:var(--green);color:white}.secondary{border:1px solid #b8c9bd;color:var(--navy);background:white}
+.hero-photo{width:100%;height:420px;object-fit:cover;border-radius:22px;box-shadow:0 18px 45px #193b2b20}
+section{padding:70px 0}.section-head{max-width:700px;margin-bottom:30px}
+h2{font-size:clamp(28px,3vw,40px);line-height:1.15;color:var(--navy);margin:0 0 12px;letter-spacing:-.025em}
+.sub{color:var(--muted);font-size:17px;margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border:1px solid #e5ebe6;border-radius:15px;padding:24px;box-shadow:0 5px 18px #102b1a08}
+.icon{width:42px;height:42px;border-radius:12px;background:var(--mint);display:grid;place-items:center;font-size:21px;margin-bottom:15px}
+.card h3{color:var(--navy);margin:0 0 8px;font-size:19px}.card p{color:var(--muted);margin:0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+.split img{width:100%;height:390px;object-fit:cover;border-radius:18px}
+.bullets{padding-left:20px;color:#52616d}.bullets li{margin:8px 0}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery figure{margin:0;background:white;border:1px solid #e5ebe6;border-radius:13px;overflow:hidden}
+.gallery img{width:100%;height:230px;object-fit:cover;display:block}
+.gallery figcaption{padding:12px 14px;font-size:14px;font-weight:700;color:var(--navy)}
+.notice{background:#fff8e9;border:1px solid #f0dfb7;border-radius:12px;padding:16px 18px;color:#67532b;font-size:14px;margin-top:20px}
+.history{background:var(--navy);color:white}
+.history h2{color:white}.history .sub{color:#d8e2e9}
+.history-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.year{font-size:54px;font-weight:800;color:#e9c36f;line-height:1}
+footer{background:#10283e;color:#dce5eb;padding:36px 0}
+.footer-grid{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+.small{font-size:13px;color:#b8c7d1}
+[hidden]{display:none!important}
+@media(max-width:800px){.hero-grid,.split,.history-grid{grid-template-columns:1fr}.hero{padding:48px 0}.hero-photo{height:300px}.cards{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}nav{gap:10px}.nav{align-items:flex-start;flex-wrap:wrap}}
+@media(max-width:480px){.gallery{grid-template-columns:1fr}.gallery img{height:250px}nav a{font-size:12px}}
+</style>
+<link rel="icon" type="image/png" href="images/neki-emblem.png">\n</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><img class="mark" src="images/neki-emblem.png" alt="Foundation Neki emblem"><span class="brand-copy"><span class="brand-name">FOUNDATION NEKI</span><span class="brand-since">SINCE 1999</span></span></a>
+<nav>
+<a href="#about" data-i="navAbout">About</a><a href="#work" data-i="navWork">Our work</a><a href="#gallery" data-i="navGallery">Gallery</a><a href="#contact" data-i="navContact">Contact</a>
+<select class="lang" id="language" aria-label="Choose language"><option value="en">EN</option><option value="tg">TJ</option><option value="ru">RU</option></select>
+</nav></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><div class="eyebrow" data-i="eyebrow">A public organisation in Tajikistan</div>
+<h1 data-i="heroTitle">Supporting children. Strengthening families.</h1>
+<p class="lead" data-i="heroLead">Foundation Neki works to support children with disabilities and their families through community activities, learning opportunities and practical assistance.</p>
+<div class="actions"><a class="btn primary" href="#work" data-i="ctaWork">Discover our work</a><a class="btn secondary" href="#contact" data-i="ctaContact">Contact us</a></div></div>
+<img class="hero-photo" src="images/community-celebration-1.jpeg" alt="Children and families taking part in a community celebration">
+</div></section>
+
+<section id="about"><div class="wrap split">
+<div><div class="eyebrow" data-i="aboutEyebrow">Who we are</div><h2 data-i="aboutTitle">A community built around inclusion and opportunity</h2>
+<p class="sub" data-i="aboutText">Foundation Neki is a public organisation based in Dushanbe, Tajikistan. Historical material provided by the organisation describes its work supporting children with disabilities and their families, including education, rehabilitation, practical assistance and creative activities.</p>
+<p class="sub" data-i="aboutText2">The organisation’s 2009 publication records a history beginning in 1999. We are preparing this website to share its story, activities and future plans.</p></div>
+<img src="images/handicrafts-exhibition.jpeg" alt="Handmade creative work displayed at an organisation exhibition">
+</div></section>
+
+<section id="work" style="background:#f1f6f2"><div class="wrap">
+<div class="section-head"><div class="eyebrow" data-i="workEyebrow">What we do</div><h2 data-i="workTitle">Practical support and opportunities to participate</h2><p class="sub" data-i="workLead">Our historical materials and photographs show several areas of activity.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">♡</div><h3 data-i="card1Title">Family and community support</h3><p data-i="card1Text">Community gatherings and activities that bring children and families together.</p></div>
+<div class="card"><div class="icon">✦</div><h3 data-i="card2Title">Inclusive celebrations</h3><p data-i="card2Text">Celebrations and gift-giving activities designed to create joyful shared experiences.</p></div>
+<div class="card"><div class="icon">✿</div><h3 data-i="card3Title">Creative skills</h3><p data-i="card3Text">Handicrafts, sewing, embroidery, drawing and opportunities to display creative work.</p></div>
+</div></div></section>
+
+<section class="history"><div class="wrap history-grid"><div><div class="eyebrow" style="color:#e9c36f" data-i="historyEyebrow">Our history</div><h2 data-i="historyTitle">A story that began in 1999</h2><p class="sub" data-i="historyText">A 2009 organisational publication supplied for this website describes Foundation Neki’s registration history and reports support for children and families. We will add verified milestones and updated information as records are confirmed.</p></div><div><div class="year">1999</div><p class="sub" data-i="historyCaption">Year of establishment stated in the historical publication</p></div></div></section>
+
+<section id="gallery"><div class="wrap"><div class="section-head"><div class="eyebrow" data-i="galleryEyebrow">From our activities</div><h2 data-i="galleryTitle">Moments from the community</h2><p class="sub" data-i="galleryLead">A selection of photographs shared by the organisation.</p></div>
+<div class="gallery">
+<figure><img src="images/community-gifts-1.jpeg" alt="Children and families with holiday gift packages"><figcaption data-i="cap1">Holiday gifts and family support</figcaption></figure>
+<figure><img src="images/community-celebration-2.jpeg" alt="Children at a community celebration"><figcaption data-i="cap2">Community celebration</figcaption></figure>
+<figure><img src="images/community-event.jpeg" alt="Families and children gathered for an event"><figcaption data-i="cap3">A day together</figcaption></figure>
+<figure><img src="images/children-celebration.jpeg" alt="Children receiving gifts"><figcaption data-i="cap4">Sharing joyful moments</figcaption></figure>
+<figure><img src="images/handicrafts-exhibition.jpeg" alt="Handicrafts and creative work on display"><figcaption data-i="cap5">Handicrafts exhibition</figcaption></figure>
+<figure><img src="images/handmade-textiles.jpeg" alt="Textile and embroidery work"><figcaption data-i="cap6">Textile and embroidery work</figcaption></figure>
+<figure><img src="images/creative-products.jpeg" alt="Handmade creative objects"><figcaption data-i="cap7">Creative products</figcaption></figure>
+<figure><img src="images/gift-distribution.jpeg" alt="Children and families during gift distribution"><figcaption data-i="cap8">Gift distribution</figcaption></figure>
+<figure><img src="images/beneficiary-photo-review.jpeg" alt="A photograph shared by the organisation"><figcaption data-i="cap9">A moment shared with us</figcaption></figure>
+</div>
+<div class="notice" data-i="privacy">Privacy reminder: before publishing photographs that show identifiable children, obtain permission from their parents or legal guardians and confirm that the children’s dignity and safety are protected.</div>
+</div></section>
+
+<section id="contact" style="background:#f1f6f2"><div class="wrap split">
+<div><div class="eyebrow" data-i="contactEyebrow">Get in touch</div><h2 data-i="contactTitle">Connect with Foundation Neki</h2><p class="sub" data-i="contactText">We welcome enquiries from families, community partners, supporters and organisations interested in inclusive opportunities for children.</p></div>
+<div class="card"><h3 data-i="contactDetails">Contact details</h3><p><strong data-i="directorLabel">Director:</strong> Rahmonov Siddiq</p><p><strong data-i="locationLabel">Location:</strong> Dushanbe, Tajikistan</p><p><strong>Phone:</strong> <a href="tel:+992918629135">+992 918 629 135</a></p><p><strong>Email:</strong> <a href="mailto:mukhsidin95@gmail.com">mukhsidin95@gmail.com</a></p></div>
+</div></section>
+</main>
+<footer><div class="wrap footer-grid"><div><strong>FOUNDATION NEKI</strong><div class="small" data-i="footerLine">Supporting children with disabilities and their families in Tajikistan.</div></div><div class="small">© <span id="year"></span> Foundation Neki</div></div></footer>
+<script>
+const translations={
+en:{
+navAbout:"About",navWork:"Our work",navGallery:"Gallery",navContact:"Contact",eyebrow:"A public organisation in Tajikistan",heroTitle:"Supporting children. Strengthening families.",heroLead:"Foundation Neki works to support children with disabilities and their families through community activities, learning opportunities and practical assistance.",ctaWork:"Discover our work",ctaContact:"Contact us",aboutEyebrow:"Who we are",aboutTitle:"A community built around inclusion and opportunity",aboutText:"Foundation Neki is a public organisation based in Dushanbe, Tajikistan. Historical material provided by the organisation describes its work supporting children with disabilities and their families, including education, rehabilitation, practical assistance and creative activities.",aboutText2:"The organisation’s 2009 publication records a history beginning in 1999. We are preparing this website to share its story, activities and future plans.",workEyebrow:"What we do",workTitle:"Practical support and opportunities to participate",workLead:"Our historical materials and photographs show several areas of activity.",card1Title:"Family and community support",card1Text:"Community gatherings and activities that bring children and families together.",card2Title:"Inclusive celebrations",card2Text:"Celebrations and gift-giving activities designed to create joyful shared experiences.",card3Title:"Creative skills",card3Text:"Handicrafts, sewing, embroidery, drawing and opportunities to display creative work.",historyEyebrow:"Our history",historyTitle:"A story that began in 1999",historyText:"A 2009 organisational publication supplied for this website describes Foundation Neki’s registration history and reports support for children and families. We will add verified milestones and updated information as records are confirmed.",historyCaption:"Year of establishment stated in the historical publication",galleryEyebrow:"From our activities",galleryTitle:"Moments from the community",galleryLead:"A selection of photographs shared by the organisation.",cap1:"Holiday gifts and family support",cap2:"Community celebration",cap3:"A day together",cap4:"Sharing joyful moments",cap5:"Handicrafts exhibition",cap6:"Textile and embroidery work",cap7:"Creative products",cap8:"Gift distribution",cap9:"A moment shared with us",privacy:"Privacy reminder: before publishing photographs that show identifiable children, obtain permission from their parents or legal guardians and confirm that the children’s dignity and safety are protected.",contactEyebrow:"Get in touch",contactTitle:"Connect with Foundation Neki",contactText:"We welcome enquiries from families, community partners, supporters and organisations interested in inclusive opportunities for children.",contactDetails:"Contact details",directorLabel:"Director:",locationLabel:"Location:",footerLine:"Supporting children with disabilities and their families in Tajikistan."
+},
+tg:{
+navAbout:"Дар бораи мо",navWork:"Фаъолияти мо",navGallery:"Аксҳо",navContact:"Тамос",eyebrow:"Ташкилоти ҷамъиятӣ дар Тоҷикистон",heroTitle:"Дастгирии кӯдакон. Тақвияти оилаҳо.",heroLead:"Фонди Неки кӯдакони дорои маъюбият ва оилаҳои онҳоро тавассути чорабиниҳои ҷамъиятӣ, имкониятҳои омӯзиш ва ёрии амалӣ дастгирӣ мекунад.",ctaWork:"Фаъолияти мо",ctaContact:"Бо мо тамос гиред",aboutEyebrow:"Мо кистем",aboutTitle:"Ҷомеае барои фарогирӣ ва имкониятҳо",aboutText:"Фонди Неки ташкилоти ҷамъиятиест, ки дар Душанбе, Тоҷикистон фаъолият мекунад. Маводи таърихии пешниҳодшуда фаъолияти ташкилотро дар самти дастгирии кӯдакони дорои маъюбият ва оилаҳои онҳо, аз ҷумла маориф, тавонбахшӣ, ёрии амалӣ ва корҳои эҷодӣ тавсиф мекунад.",aboutText2:"Нашрияи соли 2009 таърихи ташкилотро аз соли 1999 нишон медиҳад. Ин сомона барои муаррифии таърих, фаъолият ва нақшаҳои ояндаи он омода мешавад.",workEyebrow:"Самтҳои фаъолият",workTitle:"Дастгирии амалӣ ва имконияти иштирок",workLead:"Маводи таърихӣ ва аксҳои мо якчанд самти фаъолиятро нишон медиҳанд.",card1Title:"Дастгирии оила ва ҷомеа",card1Text:"Вохӯриҳо ва чорабиниҳое, ки кӯдакон ва оилаҳоро ба ҳам меоранд.",card2Title:"Ҷашнҳои фарогир",card2Text:"Ҷашнҳо ва тақдими туҳфаҳо барои фароҳам овардани лаҳзаҳои хуши муштарак.",card3Title:"Малакаҳои эҷодӣ",card3Text:"Ҳунарҳои дастӣ, дӯзандагӣ, гулдӯзӣ, расмкашӣ ва намоиши корҳои эҷодӣ.",historyEyebrow:"Таърихи мо",historyTitle:"Таърих аз соли 1999 оғоз мешавад",historyText:"Нашрияи ташкилот дар соли 2009, ки барои ин сомона пешниҳод шудааст, таърихи бақайдгирии Фонди Неки ва дастгирии кӯдакон ва оилаҳоро зикр мекунад. Пас аз тасдиқи ҳуҷҷатҳо маълумоти дақиқ ва нав илова карда мешавад.",historyCaption:"Соли таъсис тибқи нашрияи таърихӣ",galleryEyebrow:"Аз фаъолияти мо",galleryTitle:"Лаҳзаҳо аз ҳаёти ҷомеа",galleryLead:"Интихоби аксҳое, ки ташкилот пешниҳод кардааст.",cap1:"Туҳфаҳои идона ва дастгирии оилаҳо",cap2:"Ҷашни ҷамъиятӣ",cap3:"Рӯзи якҷоя",cap4:"Лаҳзаҳои шод",cap5:"Намоиши ҳунарҳои дастӣ",cap6:"Корҳои дӯзандагӣ ва гулдӯзӣ",cap7:"Маҳсулоти эҷодӣ",cap8:"Тақсими туҳфаҳо",cap9:"Лаҳзае аз фаъолияти мо",privacy:"Ёдоварӣ оид ба махфият: пеш аз нашри аксҳое, ки кӯдаконро шинохтан мумкин аст, розигии падару модар ё намояндаи қонунии онҳоро гиред ва амнияту шаъну шарафи кӯдаконро ҳифз намоед.",contactEyebrow:"Бо мо тамос гиред",contactTitle:"Бо Фонди Неки дар тамос бошед",contactText:"Мо аз муроҷиати оилаҳо, шарикони ҷомеа, дастгиркунандагон ва ташкилотҳое, ки ба имкониятҳои фарогир барои кӯдакон таваҷҷӯҳ доранд, истиқбол мекунем.",contactDetails:"Маълумоти тамос",directorLabel:"Директор:",locationLabel:"Ҷойгиршавӣ:",footerLine:"Дастгирии кӯдакони дорои маъюбият ва оилаҳои онҳо дар Тоҷикистон."
+},
+ru:{
+navAbout:"О нас",navWork:"Наша работа",navGallery:"Галерея",navContact:"Контакты",eyebrow:"Общественная организация в Таджикистане",heroTitle:"Поддержка детей. Поддержка семей.",heroLead:"Фонд Неки поддерживает детей с инвалидностью и их семьи через общественные мероприятия, образовательные возможности и практическую помощь.",ctaWork:"Наша деятельность",ctaContact:"Связаться с нами",aboutEyebrow:"Кто мы",aboutTitle:"Сообщество, основанное на равных возможностях",aboutText:"Фонд Неки — общественная организация, расположенная в Душанбе, Таджикистан. Исторические материалы организации описывают поддержку детей с инвалидностью и их семей, включая образование, реабилитацию, практическую помощь и творческие занятия.",aboutText2:"В публикации организации за 2009 год история начинается с 1999 года. Этот сайт создаётся, чтобы рассказать об истории, деятельности и будущих планах организации.",workEyebrow:"Чем мы занимаемся",workTitle:"Практическая поддержка и возможности участия",workLead:"Исторические материалы и фотографии показывают несколько направлений деятельности.",card1Title:"Поддержка семей и сообщества",card1Text:"Встречи и мероприятия, объединяющие детей и семьи.",card2Title:"Инклюзивные праздники",card2Text:"Праздники и вручение подарков, создающие радостные общие впечатления.",card3Title:"Творческие навыки",card3Text:"Ремёсла, шитьё, вышивка, рисование и возможность демонстрировать творческие работы.",historyEyebrow:"Наша история",historyTitle:"История, начавшаяся в 1999 году",historyText:"Предоставленная для сайта публикация организации за 2009 год описывает историю регистрации Фонда Неки и сообщает о поддержке детей и семей. Проверенные даты и обновлённая информация будут добавлены после подтверждения документов.",historyCaption:"Год основания согласно исторической публикации",galleryEyebrow:"Наша деятельность",galleryTitle:"Моменты из жизни сообщества",galleryLead:"Подборка фотографий, предоставленных организацией.",cap1:"Праздничные подарки и поддержка семей",cap2:"Общественный праздник",cap3:"День вместе",cap4:"Радостные моменты",cap5:"Выставка изделий ручной работы",cap6:"Текстиль и вышивка",cap7:"Творческие изделия",cap8:"Вручение подарков",cap9:"Момент из нашей деятельности",privacy:"Напоминание о конфиденциальности: перед публикацией фотографий, на которых можно узнать детей, получите согласие родителей или законных представителей и убедитесь, что достоинство и безопасность детей защищены.",contactEyebrow:"Свяжитесь с нами",contactTitle:"Связаться с Фондом Неки",contactText:"Мы приветствуем обращения семей, общественных партнёров, сторонников и организаций, заинтересованных в инклюзивных возможностях для детей.",contactDetails:"Контактная информация",directorLabel:"Директор:",locationLabel:"Местонахождение:",footerLine:"Поддержка детей с инвалидностью и их семей в Таджикистане."
+}};
+function setLanguage(lang){document.documentElement.lang=lang;document.querySelectorAll("[data-i]").forEach(el=>{const k=el.dataset.i;if(translations[lang][k])el.textContent=translations[lang][k]});}
+document.getElementById("language").addEventListener("change",e=>setLanguage(e.target.value));
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body></html>
